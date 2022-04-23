@@ -1,5 +1,5 @@
 import "./catgories.styles.scss";
-
+import CategoryItem from "./components/category-item/category-items.component";
 const App = () => {
   const categories = [
     {
@@ -31,22 +31,16 @@ const App = () => {
 
   const categories_container = categories.map((item) => {
     return (
-      <div key={item.id} className="category-container">
-        <div
-          className="background-image"
-          style={{
-            backgroundImage: `url(${item.imageUrl})`,
-          }}
-        />
-        <div className="category-body-container">
-          <h2>{item.title}</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
+      <CategoryItem key={item.id} title={item.title} imageUrl={item.imageUrl} />
     );
   });
 
-  return <div className="categories-container">{categories_container}</div>;
+  return (
+    <div className="categories-container">
+      {categories_container}
+      <h1>Hello</h1>
+    </div>
+  );
 };
 
 export default App;
