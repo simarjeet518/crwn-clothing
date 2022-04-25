@@ -1,5 +1,7 @@
 import './category-item.styles.scss';
 
+import CategoryBody from './category-body.conponent.jsx';
+
 const CategoryItem = (props) => {
   const { imageUrl, title} = props;
 
@@ -11,10 +13,10 @@ const CategoryItem = (props) => {
             backgroundImage: `url(${imageUrl})`,
           }}
         />
-        <div className="category-body-container">
-          <h2>{title}</h2>
+         <div className="category-body-container">
+          <h2>{props.title}</h2>
           <p>Shop Now</p>
-        </div>
+         </div>
       </div>
   );
 }
