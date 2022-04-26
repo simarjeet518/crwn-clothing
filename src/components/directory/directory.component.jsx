@@ -12,7 +12,6 @@ const Directory = (props) => {
   return (
     <div className="categories-container">
       {categories_container}
-      <h1>Hello</h1>
     </div>
   )
 }
