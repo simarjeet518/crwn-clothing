@@ -1,9 +1,7 @@
 import './category-item.styles.scss';
 
-import CategoryBody from './category-body.conponent.jsx';
-
 const CategoryItem = (props) => {
-  const { imageUrl, title} = props;
+  const { imageUrl,title} = props;
 
   return (
     <div  className="category-container">
@@ -14,7 +12,7 @@ const CategoryItem = (props) => {
           }}
         />
          <div className="category-body-container">
-          <h2>{props.title}</h2>
+          <h2>{title}</h2>
           <p>Shop Now</p>
          </div>
       </div>
