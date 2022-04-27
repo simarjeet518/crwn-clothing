@@ -6,7 +6,7 @@ import "./navigation.styles.scss";
 const Navigation = () => {
   return (
     <Fragment>
-      <div class="navigation">
+      <div className="navigation">
         <Link className="logo-container" to="/">
           <CrwnLogo className="logo" />
         </Link>
